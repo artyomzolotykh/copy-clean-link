@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Clean Link</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <main class="popup">
+    <header class="header">
+      <img class="logo" src="icons/icon-48.png" alt="">
+
+      <div>
+        <h1>Copy Clean Link</h1>
+        <p>Remove URL parameters</p>
+      </div>
+    </header>
+
+    <section class="result">
+      <div class="result-header">
+        <span id="url-label">Clean URL</span>
+        <span id="removed-count"></span>
+      </div>
+
+      <textarea id="clean-url" rows="4" readonly></textarea>
+    </section>
+
+    <section id="removed-section" class="removed-section" hidden>
+      <h2>Removed parameters</h2>
+      <ul id="removed-list"></ul>
+    </section>
+
+    <button id="copy-button" type="button">
+      <svg
+        id="copy-icon"
+        class="button-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <rect
+          x="8"
+          y="8"
+          width="11"
+          height="11"
+          rx="2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path
+          d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <svg
+        id="check-icon"
+        class="button-icon is-hidden"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path
+          d="M5 12.5l4.5 4.5L19 7.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <span id="copy-text">Copy Clean URL</span>
+    </button>
+
+    <p id="status" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>

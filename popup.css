@@ -1,0 +1,169 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #f6f7fa;
+}
+
+body {
+  margin: 0;
+}
+
+.popup {
+  box-sizing: border-box;
+  width: 380px;
+  padding: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #687087;
+  font-size: 13px;
+}
+
+.result {
+  padding: 12px;
+  border: 1px solid #dfe3ec;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: #687087;
+  font-size: 12px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 86px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #dfe3ec;
+  border-radius: 8px;
+  outline: none;
+  color: #172033;
+  background: #f9fafc;
+  font: 12px/1.45 Consolas, monospace;
+}
+
+textarea:focus {
+  border-color: #25344f;
+}
+
+.removed-section {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff8df;
+}
+
+.removed-section h2 {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.removed-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.removed-section li {
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: #5b4300;
+  background: #ffe9a6;
+  font: 12px Consolas, monospace;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+
+  border: 0;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background: #1f3a5f;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background .18s,
+    transform .12s,
+    box-shadow .18s;
+}
+
+button:hover {
+  background: #29548d;
+  box-shadow: 0 6px 16px rgba(41, 84, 141, .28);
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: default;
+}
+
+#status {
+  min-height: 18px;
+  margin: 10px 0 0;
+  color: #687087;
+  text-align: center;
+  font-size: 12px;
+}
+
+button.is-copied {
+  background: #23845c;
+  box-shadow: 0 6px 16px rgba(35, 132, 92, 0.24);
+}
+
+.button-icon {
+  flex: 0 0 auto;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.button-icon.is-hidden {
+  display: none;
+}
